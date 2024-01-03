@@ -1,0 +1,49 @@
+{%extends 'app/base.html' %}
+{% load static %}
+{% block title %} About {% endblock title%}
+{% block banner_slider%}
+<div id="carouselExample" class="carousel slide">
+ <div class="carousel-inner">
+   <div class="carousel-item active">
+     <img src="{% static 'images/banners/b1.jpg' %}" class="d-block w-100" alt="inner image">
+   </div>
+   <div class="carousel-item ">
+     <img src="{% static 'images/banners/b2.jpg' %}" class="d-block w-100" alt="inner image">
+   </div>
+   <div class="carousel-item ">
+     <img src="{% static 'images/banners/b3.jpg' %}" class="d-block w-100" alt="inner image">
+   </div>
+   <div class="carousel-item active">
+     <img src="{% static 'images/banners/b4.jpg' %}" class="d-block w-100" alt="inner image">
+   </div>
+ </div>
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   <span class="visually-hidden">Previous</span>
+ </button>
+ <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   <span class="visually-hidden">Next</span>
+ </button>
+</div>
+{% endblock banner_slider%}
+{% block main-content%}
+  <div class="row container">
+    <h2 class="text-center">About Us</h2><br>
+    
+<p class="fs-4 text-center">
+  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+</p>
+    </div>
+    <br>
+    <br>
+    <h2 class="text-center">MISSIONS</h2>
+    <div>
+      <p class="fs-4 text-center">
+        If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation, any sum is appreciated
+      </p >
+    </div>
+  </div>
+
+{% endblock main-content%}
